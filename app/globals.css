@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root{
-  /* Dark Luxury palette */
-  --bg: 10 10 11;        /* near-black */
-  --fg: 245 245 244;     /* off-white */
-  --muted: 160 160 160;  /* calm gray */
-  --line: 38 38 41;      /* hairline */
+  /* Dark Luxury — minimal */
+  --bg: 8 8 9;           /* deeper black */
+  --fg: 242 242 240;     /* softer white */
+  --muted: 155 155 155;  /* calm gray */
+  --line: 26 26 28;      /* subtle hairline */
   --accent: 160 130 60;  /* muted gold */
 }
 
