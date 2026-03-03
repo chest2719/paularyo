@@ -2,7 +2,7 @@ import { clsx } from "clsx";
 
 export function Kicker({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <p className={clsx("text-xs tracking-[0.28em] uppercase text-[rgb(var(--muted))]", className)}>
+    <p className={clsx("text-xs tracking-[0.32em] uppercase text-muted", className)}>
       {children}
     </p>
   );
@@ -12,7 +12,7 @@ export function H1({ children, className }: { children: React.ReactNode; classNa
   return (
     <h1
       className={clsx(
-        "mt-6 font-light tracking-[-0.035em] leading-[1.05] text-5xl md:text-6xl text-[rgb(var(--fg))]",
+        "mt-6 font-serif font-light tracking-tighter2 leading-[1.02] text-5xl md:text-6xl text-fg",
         className
       )}
     >
@@ -25,7 +25,7 @@ export function H2({ children, className }: { children: React.ReactNode; classNa
   return (
     <h2
       className={clsx(
-        "font-light tracking-[-0.03em] leading-tight text-3xl md:text-4xl text-[rgb(var(--fg))]",
+        "font-serif font-light tracking-tighter2 leading-tight text-3xl md:text-4xl text-fg",
         className
       )}
     >
@@ -36,7 +36,7 @@ export function H2({ children, className }: { children: React.ReactNode; classNa
 
 export function PLead({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <p className={clsx("mt-8 text-lg leading-relaxed text-[rgb(var(--muted))]", className)}>
+    <p className={clsx("mt-8 text-lg leading-relaxed text-muted", className)}>
       {children}
     </p>
   );
@@ -44,7 +44,7 @@ export function PLead({ children, className }: { children: React.ReactNode; clas
 
 export function PMuted({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <p className={clsx("text-sm leading-relaxed text-[rgb(var(--muted))]", className)}>
+    <p className={clsx("text-sm leading-relaxed text-muted", className)}>
       {children}
     </p>
   );

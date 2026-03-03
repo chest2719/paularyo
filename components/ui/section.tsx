@@ -5,5 +5,5 @@ export function Section({ children, className }: { children: React.ReactNode; cl
 }
 
 export function Divider({ className }: { className?: string }) {
-  return <div className={clsx("h-px w-full bg-[rgb(var(--line))]", className)} />;
+  return <div className={clsx("h-px w-full bg-line", className)} />;
 }
