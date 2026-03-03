@@ -1,65 +1,43 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <div className="container-pad py-24">
+
+      {/* Hero */}
+      <section className="max-w-3xl">
+        <p className="text-xs tracking-[0.25em] uppercase text-[rgb(var(--muted))]">
+          Paularyo
+        </p>
+
+        <h1 className="mt-6 text-5xl md:text-6xl font-light tracking-[-0.03em] leading-tight">
+          Digitale Autorität für Organisationen mit hohem Anspruch.
+        </h1>
+
+        <p className="mt-8 text-lg text-[rgb(var(--muted))] leading-relaxed">
+          Paularyo entwickelt präzise Positionierungs- und Conversion-Systeme 
+          für ausgewählte Partner im deutschsprachigen Raum.
+        </p>
+
+        <div className="mt-10 flex gap-6 items-center">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/apply"
+            className="rounded-xl border border-[rgb(var(--line))] bg-[rgb(var(--fg))] px-6 py-3 text-sm text-[rgb(var(--bg))] shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:opacity-90 transition"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Zusammenarbeit anfragen
           </a>
+
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/authority-systems"
+            className="text-sm text-[rgb(var(--muted))] underline underline-offset-4 hover:text-[rgb(var(--fg))] transition"
           >
-            Documentation
+            Vorgehen ansehen
           </a>
         </div>
-      </main>
+
+        <p className="mt-8 text-xs text-[rgb(var(--muted))]">
+          Wir prüfen jede Anfrage individuell.
+        </p>
+      </section>
+
     </div>
   );
 }
